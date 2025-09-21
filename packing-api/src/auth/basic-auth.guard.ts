@@ -20,7 +20,7 @@ export class BasicAuthGuard implements CanActivate {
     const decoded = Buffer.from(credentials, 'base64').toString();
     const [user, pass] = decoded.split(':');
 
-    if (user !== 'lucas' || pass !== '1234') {
+    if (user !== 'l2code' || pass !== '1234') {
       throw new UnauthorizedException('Invalid username or password');
     }
 
